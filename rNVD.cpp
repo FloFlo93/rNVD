@@ -24,7 +24,7 @@ tuple<double, double, double, long long int, long long int> get_rNVD(vector<vect
     double firstVsSecond = firstIntersectionSum*1.0/nFirst;
     double secondVsFirst = secondIntersectionSum*1.0/nSecond;
     double rNVD = (firstIntersectionSum + secondIntersectionSum)*1.0/(nFirst + nSecond);
-    return make_tuple(firstVsSecond, secondVsFirst, rNVD);
+    return make_tuple(firstVsSecond, secondVsFirst, rNVD, nFirst, nSecond);
 }
 
 static long long int countAllItems(vector<vector<string>>& clusterSet) {
