@@ -1,5 +1,5 @@
 <b>Author: Florian Piewald </b>
-<b>Affiliation:<b> Affiliation: [Division of Computational Systems Biology (CUBE), University of Vienna](http://cube.univie.ac.at/) </b>
+<b>Affiliation: [Division of Computational Systems Biology (CUBE), University of Vienna](http://cube.univie.ac.at/) </b>
 
 rNVD (reverse normalized Van Dongen index) is a program that allows to calculate the similarity of two clusterings.
 
