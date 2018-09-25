@@ -34,11 +34,11 @@ In case an output suitable to be read by other programs, -q can be added (note t
 Each clustering is represented as json file. The format is consistent with the format to represent gene clusters, which is used in the [PICA-to-go](https://github.com/FloFlo93/PICA-to-go) project. While the key is the name of the cluster (is not further processed, can be left empty), the value contains all items seperated by whitespace. It is required that each item has an unique name.
 
 e.g.
-'''json
+```json
 {"1":"A B C D E",
 "2":"F G H I J",
 "3":"K L M N O"}
-'''
+```
 
 In this case, we have a clustering containing three clusters. Each item of a cluster is represented by an unique single character.
 
