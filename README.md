@@ -53,9 +53,10 @@ This project originates from the evaluation of clusterings in regard to the [PIC
 ## Algorithmic background
 The Van Dongen measure is a set matching algorithm to compare clusterings. Set matching means that for each cluster of the first clustering the cluster with the largest intersection in the second clustering is searched. This is done for each cluster of the first clustering and the intersection is summed up. For the Meila-Heckerman index this value is now divided by the number of items (n). In case of the Van Dongen measure, the number of maximal intersections is also summed up using the clusters of the 2nd clustering. Originally, the overall sum is substracted from 2n to gain the Van Dongen measure ([Wagner 2007](https://publikationen.bibliothek.kit.edu/1000011477)). As this value may not be very meaningful, a normalization is described in literature by dividing this value with 2n ([Rezaei et al., 2016](https://doi.org/10.1109/TKDE.2016.2551240)). This would mean that the a value of zero corresponds to identical clusterings, which is counterintuitive. Therefore, I introduced a reversed normalization of this index ranging from zero to one (with one meaning that the clusters are identical).
 
-$$ rNVD = \cfrac{\sum_{i=1}^{K} max_{j=1}^{K'} Intersection_{ij} + \sum_{j=1}^{K'} max_{i=1}^{K} Intersection_{ij}}{2n} $$
+<img src="https://www.codecogs.com/latex/eqneditor.php?latex=rNVD = \cfrac{\sum_{i=1}^{K} max_{j=1}^{K'} Intersection_{ij} + \sum_{j=1}^{K'} max_{i=1}^{K} Intersection_{ij}}{2n}" />
 
-$$ MH = \cfrac{\sum_{i=1}^{K} max_{j=1}^{K'} Intersection_{ij}}{n} $$
+<img src="https://www.codecogs.com/latex/eqneditor.php?latex=MH = \cfrac{\sum_{i=1}^{K} max_{j=1}^{K'} Intersection_{ij}}{n}" />
+
 
 # Tests
 
