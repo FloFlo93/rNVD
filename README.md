@@ -56,7 +56,7 @@ The Van Dongen measure is a set matching algorithm to compare clusterings. Set m
 
 <img src="rNVD_formula.gif"/>
 
-<img src="MH_formula.gif" />
+<img src="mh_formula.gif" />
 
 
 # Tests
